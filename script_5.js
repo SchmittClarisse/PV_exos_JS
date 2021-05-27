@@ -19,13 +19,13 @@ const books = [
 
   //Quel est livre le + emprunté ?
   Rented = books.map(books => books.rented);
-  result3 = Math.max(...Rented);
-  console.log(result3);
+  result12 = Math.max(...Rented);
+  console.log(result12);
 
   //quel est le livre le - emprunté ?
   Rented = books.map(books => books.rented);
-  result4 = Math.min(...Rented);
-  console.log(result4);
+  result13 = Math.min(...Rented);
+  console.log(result13);
  
 
   //Trouve le livre avec l'ID: 873495
