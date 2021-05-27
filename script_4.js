@@ -19,4 +19,15 @@ const entrepreneurs = [
     { first: 'Peter', last: 'Thiel', year: 1967 }
   ];
 
-  
+    //Filtre dans cette liste les entrepreneurs qui sont nés dans les années 70 ;
+    result1 = entrepreneurs.filter(entrepeneur => entrepeneur.year > 1970 && entrepeneur.year < 1980)
+    console.log(result1)
+    //Sors une array qui contient le prénom et le nom des entrepreneurs ;
+    const result2 = entrepreneurs.map(entrepreneur => entrepreneur.first + " " + entrepreneur.last);
+    console.log(result2);
+    //Quel âge aurait chaque inventeur aujourd'hui ?
+    const result3 = entrepreneurs.map(entrepreneur => (2021 - entrepreneur.year));
+    console.log(result3);
+    //Trie les entrepreneurs par ordre alphabétique du nom de famille.
+    const result4 = entrepreneurs.sort((a, b) => a.last.localeCompare(b.last))
+    console.log(result4)

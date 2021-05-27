@@ -1,4 +1,4 @@
-let userNumber = prompt('De quel nombre veux-tu calculer la factorielle')
+let userNumber = prompt('De quel nombre veux-tu calculer la factorielle ?')
 
 function fact(nbr){
     var i, nbr, f = 1;
